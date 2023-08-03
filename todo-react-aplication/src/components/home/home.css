@@ -2,10 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin: 0px auto;
 }
 
-.home_container{
+
+.home_container {
     background-color: rgb(33, 31, 31);
     height: 100vh;
     color: #fff;
@@ -14,33 +16,105 @@
     flex-direction: column;
     align-items: center;
 }
+
 .item {
     display: flex;
     margin: 10px;
     padding: 20px;
-    border: 1px solid rgba(128, 128, 128, 0.676);
+    border: 2px solid rgba(128, 128, 128, 0.676);
     background-color: rgb(44, 44, 44);
     border-radius: 10px;
     color: #fff;
-    width: 300px;
+    box-shadow: 0 0 10px rgb(128, 128, 128);
+    width: 370px;
     align-items: center;
     cursor: pointer;
     transition: 0.4s;
 }
-.item:hover {
+
+.item_comp {
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid rgba(9, 180, 6, 0.676);
+    width: 370px;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(9, 180, 6);
+    cursor: pointer;
     transition: 0.4s;
-    box-shadow: 0 0 10px rgba(128, 128, 128, 0.676);
-    transform: scale(1.01);
 }
+
 .check {
     width: 20px;
     height: 20px;
     margin: 0 10px 0 0;
+    color: #fff;
 }
+
 .border {
     border: 2px solid rgb(240, 100, 124);
-    border-radius: 10px;
+    border-radius: 7px;
     width: 20px;
     height: 20px;
     margin: 0px 10px 0 0;
+}
+
+.back {
+    background-color: rgb(240, 100, 124);
+}
+
+.text {
+    font-size: 18px;
+    color: #fff;
+}
+
+.cross {
+    text-decoration: line-through;
+}
+
+.del .delete {
+    width: 1.5em;
+    height: 1.5em;
+    color: grey;
+    transition: 0.2s;
+
+}
+
+.del .delete:hover {
+    transition: 0.1s;
+    transform: scale(1.02);
+    color: red;
+    cursor: pointer;
+}
+
+.del {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.task_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}
+
+.input {
+    margin: 100px 10px;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.676);
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+    color: #fff;
+    width: 350px;
+    cursor: pointer;
+    transition: 0.4s;
 }
